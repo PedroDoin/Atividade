@@ -21,6 +21,7 @@ jobs:
      run: ./soma
      
    - name: Executar testes automatizado
-      run: |
-        gcc -o teste teste.c
-        ./teste
+      run: gcc teste.c -o teste
+
+  - name: Executar testes automatizado
+      run: ./teste
