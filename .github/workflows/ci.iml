@@ -20,4 +20,7 @@ jobs:
    - name: Executar o programa
      run: ./soma
      
-  
+   - name: Executar testes automatizado
+      run: |
+        gcc -o teste teste.c
+        ./teste
