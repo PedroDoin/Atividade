@@ -18,9 +18,6 @@ jobs:
      run: gcc soma.c -o soma
      
    - name: Executar o programa
-     run: ./programa
+     run: ./soma
      
-   - name: Executar o programa de soma
-     run: |
-       gcc -o soma soma.c
-        ./soma
+  
