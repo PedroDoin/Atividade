@@ -1,0 +1,26 @@
+name: CI para C
+
+on:
+  push:
+  
+jobs:
+  build:
+   runs-on: ubuntu-latest
+   
+   steps:
+   - name: Clonar o respositório
+     uses: actions/checkout@v3
+     
+   - name: Instalar o compilador gcc
+     run: sudo apt update && sudo apt install build-essential -y
+     
+   - name: Compilar o programa de soma
+     run: gcc soma.c -o soma
+     
+   - name: Executar o programa
+     run: ./programa
+     
+   - name: Executar o programa de soma
+     run: |
+       gcc -o soma soma.c
+        ./soma
