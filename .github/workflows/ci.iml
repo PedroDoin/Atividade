@@ -14,14 +14,13 @@ jobs:
    - name: Instalar o compilador gcc
      run: sudo apt update && sudo apt install build-essential -y
      
-   - name: Compilar o programa de soma
-     run: gcc soma.c -o soma
+   - name: Compilar o programa
+     run: gcc github.c -o programa
      
    - name: Executar o programa
-     run: ./soma
+     run: ./programa
      
    - name: Executar testes automatizado
-      run: gcc teste.c -o teste
-
-  - name: Executar testes automatizado
-      run: ./teste
+     run: |
+       gcc -o teste teste.c
+        ./teste
