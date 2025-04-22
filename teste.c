@@ -1,12 +1,12 @@
 #include <stdio.h>
 #include <assert.h>
 
-void somar() {
+void testar() {
   assert(1 == 1);
 printf("Teste passou!\n");
 }
 int main () {
-  somar();
+  testar();
   return 0;
 
 }
